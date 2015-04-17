@@ -1,4 +1,6 @@
-
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import javax.swing.JComponent;
 
 /**
  * Write a description of class GameComponent here.
@@ -6,35 +8,22 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class GameComponent
+public class GameComponent extends JComponent
+
 {
-    /** description of instance variable x (add comment for each instance variable) */
-    private int x;
-
-    /**
-     * Default constructor for objects of class GameComponent
-     */
-    public GameComponent()
+    public void paintComponent(String args[], Graphics g )
+       // throws InterruptedException
+    
     {
-        // initialise instance variables
-        x = 0;
+        Graphics2D g2 = (Graphics2D) g;
+        
+        Bird flappyBird = new Bird("images/Black_Square_Bird.jpg");
+        
+        flappyBird.draw(getHeight()/2, getWidth()/2, g2);
+        
+        /*Thread.sleep(2000);
+        
+        flappyBird.draw(getHeight()/2 +500, getWidth()/2 +500, g2);
+        */
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *    that describes the operation of the method
-     *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
-     * @param    y    description of parameter y
-     * @return    description of the return value
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x+y;
-    }
-
 }

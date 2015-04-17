@@ -11,6 +11,8 @@ public class Bird
 {
     /** description of instance variable x (add comment for each instance variable) */
     ImageIcon birdIcon;
+    int xPos;
+    int yPos;
 
     /**
      * Default constructor for objects of class Bird
@@ -18,7 +20,8 @@ public class Bird
      */
     public Bird(String birdImageAddress)
     {
-        birdIcon = new ImageIcon("birdImageAddress");
+        birdIcon = new ImageIcon(birdImageAddress);
+
     }
 
     /**
@@ -32,17 +35,22 @@ public class Bird
      * @param    y    description of parameter y
      * @return    description of the return value
      */
-    public void draw(int xPos, int yPos,int height, int width, Graphics2D g2)
+    public void draw(int x, int y, Graphics2D g2)
     {
-        //this.paintIcon(GameComponent ,g2, xPos, yPos);
-        /*public void paintIcon(Component c,
-             Graphics g,
-             int x,
-             int y)
-             */
-        g2.drawImage( birdIcon.getImage().getScaledInstance(width, height, 0));
-            
-        
+        this.xPos = x;
+        this.yPos = y;
+        g2.drawImage( birdIcon.getImage(), xPos, yPos, null);
+        //.getScaledInstance(width, height, 0)
+    }
+    
+    public int returnXPos()
+    {
+        return this.xPos;
+    }
+    
+    public int returnYPos()
+    {
+        return this.yPos;
     }
 
 }

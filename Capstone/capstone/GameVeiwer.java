@@ -13,6 +13,7 @@ public class GameVeiwer
      *
      */
     public static void main(String args[])
+           throws InterruptedException
     {
         // create and configure the frame (window) for the program
         JFrame frame = new JFrame();
