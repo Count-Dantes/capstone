@@ -1,7 +1,9 @@
-
-
+import javax.swing.ImageIcon;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.geom.Rectangle2D;
 /**
- * Write a description of class Pipe here.
+ * Write a description of class Bird here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
@@ -9,15 +11,19 @@
 public class Pipe
 {
     /** description of instance variable x (add comment for each instance variable) */
-    private int x;
+    int xLeft;
+    int xRight;
+    int yTop;
+    int yBot;
 
     /**
-     * Default constructor for objects of class Pipe
+     * Default constructor for objects of class Bird
+     * @pre            expects the given valid adress to lead to a square image
      */
-    public Pipe()
+    public Pipe(int PIPE_WIDTH, int height, int xPos)
     {
-        // initialise instance variables
-        x = 0;
+        birdIcon = new ImageIcon(birdImageAddress);
+
     }
 
     /**
@@ -31,10 +37,22 @@ public class Pipe
      * @param    y    description of parameter y
      * @return    description of the return value
      */
-    public int sampleMethod(int y)
+    public void draw(int x, int y, Graphics2D g2)
     {
-        // put your code here
-        return x+y;
+        this.xPos = x;
+        this.yPos = y;
+        g2.drawImage( birdIcon.getImage(), xPos, yPos, null);
+        //.getScaledInstance(width, height, 0)
+    }
+    
+    public int returnXPos()
+    {
+        return this.xPos;
+    }
+    
+    public int returnYPos()
+    {
+        return this.yPos;
     }
 
 }

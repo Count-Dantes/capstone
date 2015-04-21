@@ -12,14 +12,16 @@ public class GameVeiwer
      * main method for the program which creates and configures the frame for the program
      *
      */
-    public static void main(String args[])
-           throws InterruptedException
+    public int delay = 1000;
+    int score = 0;
+    public static void main()
+           //throws InterruptedException
     {
         // create and configure the frame (window) for the program
         JFrame frame = new JFrame();
         
         frame.setSize(1000 /* x */, 600 /* y */);
-        frame.setTitle("Andrew's zone");
+        frame.setTitle("flex to begin");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
         // a frame contains a single component; create the Cityscape component and add it to the frame

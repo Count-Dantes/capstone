@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=
+comment1.target=void\ run()
+comment2.params=
+comment2.target=void\ createAndShowGUI()
+comment2.text=\r\n\ Create\ the\ GUI\ and\ show\ it.\ \ For\ thread\ safety,\r\n\ this\ method\ should\ be\ invoked\ from\ the\r\n\ event-dispatching\ thread.\r\n
+comment3.params=
+comment3.target=MouseMotionEventDemo()
+comment4.params=gc
+comment4.target=MouseMotionEventDemo(GameComponent)
+comment5.params=eventDescription\ e
+comment5.target=int\ eventOutput(java.lang.String,\ java.awt.event.MouseEvent)
+comment6.params=
+comment6.target=int\ getLastState()
+comment7.params=e
+comment7.target=void\ mouseMoved(java.awt.event.MouseEvent)
+comment8.params=e
+comment8.target=void\ mouseDragged(java.awt.event.MouseEvent)
+numComments=9
