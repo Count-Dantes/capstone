@@ -22,8 +22,7 @@ public class Pipe
      */
     public Pipe(int PIPE_WIDTH, int height, int xPos)
     {
-        birdIcon = new ImageIcon(birdImageAddress);
-
+       
     }
 
     /**
@@ -39,20 +38,23 @@ public class Pipe
      */
     public void draw(int x, int y, Graphics2D g2)
     {
-        this.xPos = x;
+        /*this.xPos = x;
         this.yPos = y;
         g2.drawImage( birdIcon.getImage(), xPos, yPos, null);
         //.getScaledInstance(width, height, 0)
+        */
     }
     
     public int returnXPos()
     {
-        return this.xPos;
+        //return this.xPos;
+        return 1;
     }
     
     public int returnYPos()
     {
-        return this.yPos;
+        //return this.yPos;
+        return 1;
     }
 
 }

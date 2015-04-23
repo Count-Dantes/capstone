@@ -1,4 +1,9 @@
-
+import java.awt.GradientPaint;
+import java.awt.Color;
+import java.awt.Rectangle;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.util.Random;
 
 /**
  * Write a description of class Background here.
@@ -10,14 +15,15 @@ public class Background
 {
     /** description of instance variable x (add comment for each instance variable) */
     private int x;
+    private int y;
 
     /**
      * Default constructor for objects of class Background
      */
-    public Background()
+    public Background(int xBound, int yBound)
     {
-        // initialise instance variables
-        x = 0;
+        this.x = xBound;
+        this.y = yBound;
     }
 
     /**
@@ -31,10 +37,16 @@ public class Background
      * @param    y    description of parameter y
      * @return    description of the return value
      */
-    public int sampleMethod(int y)
+    public void draw(Graphics2D g2)
     {
         // put your code here
-        return x+y;
+        for (float i=0; i < this.x; i++)
+        {
+            GradientPaint gradient = new GradientPaint(i,0,Color.BLUE,i,this.y,Color.RED,true);
+            g2.setPaint(gradient);
+            Rectangle backgroundSegment = new Rectangle((int)i,0,1,this.y);
+            g2.fill(backgroundSegment);
+        }
     }
 
 }

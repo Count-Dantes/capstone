@@ -39,7 +39,9 @@ public class Bird
     {
         this.xPos = x;
         this.yPos = y;
-        g2.drawImage( birdIcon.getImage(), xPos, yPos, null);
+        //g2.drawImage( birdIcon.getImage(), this.xPos, this.yPos, null);
+        g2.drawImage( birdIcon.getImage(), 100, 200, null);
+        
         //.getScaledInstance(width, height, 0)
     }
     

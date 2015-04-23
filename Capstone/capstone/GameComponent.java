@@ -18,17 +18,22 @@ public class GameComponent extends JComponent
     public static final int PIPE_WIDTH = 0;
 
 
-    public void paintComponent(String args[], Graphics g )
+    public void paintComponent(Graphics g )
     {
         System.out.println("wut?");
-        //MouseMotionEventDemo mouse = new MouseMotionEventDemo(this);
+        MouseMotionEventDemo mouse = new MouseMotionEventDemo(this);
         Graphics2D g2 = (Graphics2D) g;
+        
+        Background background = new Background(1000, 600);
 
-        Bird flappyBird = new Bird("images/Bird.jpg");
+        Bird flappyBird = new Bird("images/andrewBirdSmall.png");
+        
+        background.draw(g2);
 
         flappyBird.draw(100, 100, g2);
-        System.out.println("yolo");
-        //System.out.println( mouse.getLastState() );
+        
+        //System.out.println("yolo");
+        System.out.println( mouse.getLastState() );
 
 
     }

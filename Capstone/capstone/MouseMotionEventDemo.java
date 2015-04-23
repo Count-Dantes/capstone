@@ -132,6 +132,10 @@ public class MouseMotionEventDemo extends JPanel
          
         //Register for mouse events on blankArea and panel.
         gc.addMouseMotionListener(this);
+        addMouseMotionListener(this);
+        
+        setPreferredSize(new Dimension(50, 539));
+        setBorder(BorderFactory.createEmptyBorder(20,20,20,20));
 
 
     }
