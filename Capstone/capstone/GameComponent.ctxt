@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=g
+comment0.target=void\ paintComponent(java.awt.Graphics)
+comment1.params=
+comment1.target=void\ iterate()
+comment2.params=
+comment2.target=int\ getScore()
+comment3.params=
+comment3.target=boolean\ gameOver()
+comment4.params=
+comment4.target=int\ generateHeight()
+comment5.params=bird\ pipe
+comment5.target=boolean\ checkCollision(Bird,\ Pipe)
+numComments=6
