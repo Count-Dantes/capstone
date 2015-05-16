@@ -1,12 +1,8 @@
 #BlueJ class context
-comment0.params=PIPE_WIDTH\ PIPE_GAP\ initialHeight\ xPos
-comment0.target=Pipe(int,\ int,\ int,\ int)
-comment0.text=`\n\ Default\ constructor\ for\ objects\ of\ class\ Pipe\n\ @pre\ \ \ \ \ \ \ \ \ \ \ \ expects\ the\ given\ valid\ adress\ to\ lead\ to\ a\ square\ image\n
+comment0.params=xBound\ yBound
+comment0.target=GameOverScreen(int,\ int)
+comment0.text=\n\ Default\ constructor\ for\ objects\ of\ class\ Background\n
 comment1.params=g2
 comment1.target=void\ draw(java.awt.Graphics2D)
 comment1.text=\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\n\ \ \ \ that\ describes\ the\ operation\ of\ the\ method\n\n\ @pre\ \ \ \ \ \ \ \ preconditions\ for\ the\ method\n\ \ \ \ \ \ \ \ \ \ \ \ (what\ the\ method\ assumes\ about\ the\ method's\ parameters\ and\ class's\ state)\n\ @post\ \ \ \ postconditions\ for\ the\ method\n\ \ \ \ \ \ \ \ \ \ \ \ (what\ the\ method\ guarantees\ upon\ completion)\n\ @param\ \ \ \ y\ \ \ \ description\ of\ parameter\ y\n\ @return\ \ \ \ description\ of\ the\ return\ value\n
-comment2.params=xBird\ yBird
-comment2.target=boolean\ intersection(int,\ int)
-comment3.params=
-comment3.target=boolean\ iterate()
-numComments=4
+numComments=2

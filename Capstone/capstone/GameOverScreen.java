@@ -11,7 +11,7 @@ import java.util.Random;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Background
+public class GameOverScreen
 {
     /** description of instance variable x (add comment for each instance variable) */
     private int x;
@@ -20,7 +20,7 @@ public class Background
     /**
      * Default constructor for objects of class Background
      */
-    public Background(int xBound, int yBound)
+    public GameOverScreen(int xBound, int yBound)
     {
         this.x = xBound;
         this.y = yBound;
@@ -39,10 +39,10 @@ public class Background
      */
     public void draw(Graphics2D g2)
     {
-        Color orange = new Color(255,102,0);
+        // put your code here
         for (float i=0; i < this.x; i++)
         {
-            GradientPaint gradient = new GradientPaint(i,0,Color.BLUE,i,this.y,orange,true);
+            GradientPaint gradient = new GradientPaint(i,0,Color.RED,i,this.y,Color.RED,true);
             g2.setPaint(gradient);
             Rectangle backgroundSegment = new Rectangle((int)i,0,1,this.y);
             g2.fill(backgroundSegment);

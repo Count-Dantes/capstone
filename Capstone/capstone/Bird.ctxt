@@ -1,12 +1,18 @@
 #BlueJ class context
-comment0.params=birdImageAddress
-comment0.target=Bird(java.lang.String)
-comment0.text=\r\n\ Default\ constructor\ for\ objects\ of\ class\ Bird\r\n\ @pre\ \ \ \ \ \ \ \ \ \ \ \ expects\ the\ given\ valid\ adress\ to\ lead\ to\ a\ square\ image\r\n
-comment1.params=x\ y\ g2
-comment1.target=void\ draw(int,\ int,\ java.awt.Graphics2D)
-comment1.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \ \ \ that\ describes\ the\ operation\ of\ the\ method\r\n\r\n\ @pre\ \ \ \ \ \ \ \ preconditions\ for\ the\ method\r\n\ \ \ \ \ \ \ \ \ \ \ \ (what\ the\ method\ assumes\ about\ the\ method's\ parameters\ and\ class's\ state)\r\n\ @post\ \ \ \ postconditions\ for\ the\ method\r\n\ \ \ \ \ \ \ \ \ \ \ \ (what\ the\ method\ guarantees\ upon\ completion)\r\n\ @param\ \ \ \ y\ \ \ \ description\ of\ parameter\ y\r\n\ @return\ \ \ \ description\ of\ the\ return\ value\r\n
+comment0.params=birdImageAddress\ x\ y
+comment0.target=Bird(java.lang.String,\ int,\ int)
+comment0.text=\n\ Default\ constructor\ for\ objects\ of\ class\ Bird\n\ @pre\ \ \ \ \ \ \ \ \ \ \ \ expects\ the\ given\ valid\ adress\ to\ lead\ to\ a\ square\ image\n
+comment1.params=g2
+comment1.target=void\ draw(java.awt.Graphics2D)
+comment1.text=\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\n\ \ \ \ that\ describes\ the\ operation\ of\ the\ method\n\n\ @pre\ \ \ \ \ \ \ \ preconditions\ for\ the\ method\n\ \ \ \ \ \ \ \ \ \ \ \ (what\ the\ method\ assumes\ about\ the\ method's\ parameters\ and\ class's\ state)\n\ @post\ \ \ \ postconditions\ for\ the\ method\n\ \ \ \ \ \ \ \ \ \ \ \ (what\ the\ method\ guarantees\ upon\ completion)\n\ @param\ \ \ \ y\ \ \ \ description\ of\ parameter\ y\n\ @return\ \ \ \ description\ of\ the\ return\ value\n
 comment2.params=
-comment2.target=int\ returnXPos()
+comment2.target=int\ getXPos()
 comment3.params=
-comment3.target=int\ returnYPos()
-numComments=4
+comment3.target=int\ getYPos()
+comment4.params=
+comment4.target=void\ iterate()
+comment5.params=
+comment5.target=boolean\ isFlap()
+comment6.params=
+comment6.target=void\ flap()
+numComments=7

@@ -13,13 +13,16 @@ public class Bird
     ImageIcon birdIcon;
     int xPos;
     int yPos;
+    int flapVar = 0;
 
     /**
      * Default constructor for objects of class Bird
      * @pre            expects the given valid adress to lead to a square image
      */
-    public Bird(String birdImageAddress)
+    public Bird(String birdImageAddress,int x, int y )
     {
+        this.xPos = x;
+        this.yPos = y;
         birdIcon = new ImageIcon(birdImageAddress);
 
     }
@@ -35,24 +38,57 @@ public class Bird
      * @param    y    description of parameter y
      * @return    description of the return value
      */
-    public void draw(int x, int y, Graphics2D g2)
+    public void draw(Graphics2D g2)
     {
-        this.xPos = x;
-        this.yPos = y;
         //g2.drawImage( birdIcon.getImage(), this.xPos, this.yPos, null);
-        g2.drawImage( birdIcon.getImage(), 100, 200, null);
-        
+        g2.drawImage( birdIcon.getImage(), this.xPos, this.yPos, null);
+
         //.getScaledInstance(width, height, 0)
     }
-    
-    public int returnXPos()
+
+    public int getXPos()
     {
         return this.xPos;
     }
-    
-    public int returnYPos()
+
+    public int getYPos()
     {
         return this.yPos;
     }
 
+    public void iterate()
+    {
+        if(this.isFlap() == true)
+        {
+            this.yPos-=15;
+
+        }
+        else
+        {
+            this.yPos+=5;
+
+        }
+        
+    }
+    
+    public boolean isFlap()
+    {
+        if(this.flapVar>0)
+        {
+            //System.out.println("flapvar true");
+            this.flapVar --;
+            return true;
+        }
+        return false;
+        
+    }
+    
+    public void flap()
+    {
+        this.flapVar = 5;
+        
+    }
+
 }
+
+
